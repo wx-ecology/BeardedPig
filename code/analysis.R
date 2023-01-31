@@ -66,6 +66,14 @@ wAKDE_582 <- wAKDE
 summary(wAKDE_582, level.UD = 0.95, units = F)
 summary(wAKDE_582, level.UD = 0.50, units = F)
 
+# turn UD into polygon 
+# wAKDE_582_95 <- SpatialPolygonsDataFrame.UD(wAKDE_582,convex=FALSE,level.UD=0.95,level=0.95)
+# wAKDE_582_50 <- SpatialPolygonsDataFrame.UD(wAKDE_582,convex=FALSE,level.UD=0.5,level=0.95)
+
+# export 
+# writeShapefile(wAKDE_582, "./data/ID582_95UD.shp",level.UD=0.95,level=0.95)
+# writeShapefile(wAKDE_582, "./data/ID582_50UD.shp",level.UD=0.50,level=0.95)
+
 # ------------------------------------------------------------------------------------------------
 # animal 583 -------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------
@@ -84,6 +92,14 @@ wAKDE <- akde(animal,M.OUF,weights=TRUE)
 wAKDE_583 <- wAKDE
 summary(wAKDE_583, level.UD = 0.95, units = F)
 summary(wAKDE_583, level.UD = 0.50, units = F)
+
+# turn UD into polygon 
+# wAKDE_583_95 <- SpatialPolygonsDataFrame.UD(wAKDE_583,convex=FALSE,level.UD=0.95,level=0.95)
+# wAKDE_583_50 <- SpatialPolygonsDataFrame.UD(wAKDE_583,convex=FALSE,level.UD=0.5,level=0.95)
+
+# export 
+# writeShapefile(wAKDE_583, "./data/ID583_95UD.shp",level.UD=0.95,level=0.95)
+# writeShapefile(wAKDE_583, "./data/ID583_50UD.shp",level.UD=0.50,level=0.95)
 
 # ------------------------------------------------------------------------------------------------
 # summary ----------------------------------------------------------------------------------------
